@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TARGETNAME Condition="'$(OVERRIDE_TARGETNAME)'!='true'">monitor</TARGETNAME>
+    <TARGETTYPE Condition="'$(OVERRIDE_TARGETTYPE)'!='true'">PROGRAM</TARGETTYPE>
+    <C_DEFINES Condition="'$(OVERRIDE_C_DEFINES)'!='true'">-DWIN32</C_DEFINES>
+    <RCOPTIONS Condition="'$(OVERRIDE_RCOPTIONS)'!='true'">-N</RCOPTIONS>
+    <UMENTRY Condition="'$(OVERRIDE_UMENTRY)'!='true'">main</UMENTRY>
+    <UMTYPE Condition="'$(OVERRIDE_UMTYPE)'!='true'">console</UMTYPE>
+    <USE_MSVCRT Condition="'$(OVERRIDE_USE_MSVCRT)'!='true'">1</USE_MSVCRT>
+    <USE_NATIVE_EH Condition="'$(OVERRIDE_USE_NATIVE_EH)'!='true'">1</USE_NATIVE_EH>
+    <USE_RTTI Condition="'$(OVERRIDE_USE_RTTI)'!='true'">1</USE_RTTI>
+    <USE_STATIC_ATL Condition="'$(OVERRIDE_USE_STATIC_ATL)'!='true'">1</USE_STATIC_ATL>
+    <NTDDI_VERSION Condition="'$(OVERRIDE_NTDDI_VERSION)'!='true'">NTDDI_WIN7</NTDDI_VERSION>
+    <INCLUDES Condition="'$(OVERRIDE_INCLUDES)'!='true'">$(INCLUDES);           $(SDK_INC_PATH);           $(DDK_INC_PATH);           ..\inc;</INCLUDES>
+    <TARGETLIBS Condition="'$(OVERRIDE_TARGETLIBS)'!='true'">$(SDK_LIB_PATH)\advapi32.lib      $(SDK_LIB_PATH)\comctl32.lib      $(SDK_LIB_PATH)\kernel32.lib      $(SDK_LIB_PATH)\netapi32.lib      $(SDK_LIB_PATH)\ole32.lib      $(SDK_LIB_PATH)\oleaut32.lib      $(SDK_LIB_PATH)\user32.lib      $(SDK_LIB_PATH)\uuid.lib      $(SDK_LIB_PATH)\ntdll.lib      $(SDK_LIB_PATH)\kernel32.lib      $(SDK_LIB_PATH)\setupapi.lib      $(SDK_LIB_PATH)\rpcrt4.lib      $(SDK_LIB_PATH)\fwpuclnt.lib</TARGETLIBS>
+    <SOURCES Condition="'$(OVERRIDE_SOURCES)'!='true'">monitor.cpp</SOURCES>
+  </PropertyGroup>
+</Project>
